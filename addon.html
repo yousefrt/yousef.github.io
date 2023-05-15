@@ -1,0 +1,13 @@
+const userAgent = navigator.userAgent;
+if (userAgent.indexOf("Firefox") > -1) {
+    window.location.href = "https://i.ibb.co/0n6XTzY/image-1.jpg";
+} else if (userAgent.indexOf("Chrome") > -1) {
+    window.location.href = "https://i.ibb.co/mDGf2qz/image-2.jpg";
+} else if (userAgent.indexOf("Opera") > -1) {
+    window.location.href = "https://i.ibb.co/1MNFYQg/image-3.jpg";
+} else if (userAgent.indexOf("Edge") > -1) {
+    window.location.href = "https://i.ibb.co/H7Sk5CQ/image-4.jpg";
+} else {
+    // If the user is using a browser other than Firefox, Chrome, Opera, or Edge, redirect them to a default URL.
+    window.location.href = "https://example.com";
+}
